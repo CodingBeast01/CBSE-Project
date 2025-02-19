@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSquadz - JAVA Full Stack Training</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #002147;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .hero {
+           background-color : #002147;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            min-height: 400px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero h2 {
+            color: #ff8c00;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h3 {
+            font-size: 2rem;
+            color: #ff8c00;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .content p {
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .batch-info {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .enquire-button {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #ff4d4d;
+            color: white;
+            padding: 1rem;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            text-decoration: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .footer-buttons {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 .banner {
+            background-color: #001733;
+            min-height: 400px;
+            padding: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-content {
+            max-width: 60%;
+        }
+
+        .banner-title {
+            font-size: 4.5rem;
+            color: white;
+            font-weight: bold;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .project-text {
+            font-size: 2.5rem;
+            color: #ff8c00;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .trainer-name {
+            font-size: 2.5rem;
+            color: #ff8c00;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience {
+            color: white;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .trainer-image {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+      
+
+        .trainer-image img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            
+            z-index: 2;
+        }
+
+        @media (max-width: 1024px) {
+            .banner {
+                padding: 2rem;
+            }
+            
+            .banner-title {
+                font-size: 3rem;
+            }
+
+            .project-text, .trainer-name {
+                font-size: 2rem;
+            }
+
+            .trainer-image {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+
+            .banner-content {
+                max-width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            .trainer-image {
+                width: 250px;
+                height: 250px;
+            }
+        }
+		
+				a{
+		text-decoration :none;
+		color:white;
+		}
+		
+		
+		
+		
+		
+		
+    </style>
+</head>
+<body>
+    <header class="header">
+        <span><h2> <a href="index.html">CodeSquadz</a></h2></span>
+        <div class="contact-info">
+            <span>📞 77-04-82-64-42</span>
+            <span>📱 +91-9355805299</span>
+            <span>✉️ enquiry@codesquadz.com</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+          
+            <a href="#">Placement</a>
+            <a href="#">Blog</a>
+            <a href="login.html" class="button">Login / Signup</a>
+            <a href="https://wa.me/7704826442" class="button">Contact Us</a>
+        </nav>
+    </header>
+
+				 
+				 <div class="banner">
+        <div class="banner-content">
+            <h1 class="banner-title">JAVA Full Stack Training</h1>
+            <div class="project-text">Work on Live Project</div>
+            <div class="trainer-name">Training by Manish Bhatia Sir</div>
+            <div class="experience">(22+ Years Exp.)</div>
+        </div>
+        <div class="trainer-image">
+            <img src="images/manish.png" alt="Manish Bhatia Sir">
+        </div>
+    </div>
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+
+    <main class="content">
+        <h2>JAVA Full Stack Training February 2025</h2>
+        <div class="batch-info">
+            <p>Batch Starting from 24th Feb. 2025, Timing 6:30 PM</p>
+        </div>
+
+        <h2>JAVA Full Stack Training with IT Company</h2>
+        <p>Nowadays, companies are using a unique technique in which they are on a spree to hire special talents. They want to hire those resources that can work both front-end and back-end. They want to optimize their cost and look for perfect full-stack developers. Completing the Full Stack Developer Training in Noida is the best method to become one. Here, CodeSquadz offers you an opportunity to learn Full-Stack Java by Manish Bhatia sir (industry expert with 22+ years of experience).</p>
+
+        <h2>Why should I choose the JAVA Full Stack Developer Course?</h2>
+		<p>The JAVA Full Stack Developer Course in Noida at CodeSquadz is one of the best courses available in 2023. This course was designed by experts considering the value of the skills it provides to fast-forward your career. In our Full Stack JAVA Developer Training Course, you will learn all concepts clearly and with examples. However, our course also offers you a chance to get adequate Java knowledge. Our course has a unique curriculum to enhance the learning experience.
+
+			We have Manish Bhatia Sir (Co-Founder and JAVA Consultant at CodeSquadz) with 22+ years of experience. His methods enable students or job aspirants to learn precious information and kick-start their careers. Therefore, choosing CodeSquadz for the Best JAVA Full Stack Developer Training in Noida is important to open many doors to opportunity.</p>
+    </main>
+	
+	
+	
+	
+	 <main class="content">
+    
+        <div class="batch-info">
+           
+        </div>
+
+        <h2>The Benefit of working with an IT Company</h2>
+        <p>CodeSquadz has a special Full Stack JAVA Developer Training program. It gives a special opportunity to work with an IT company to all its students or aspirants. You will work in a renowned IT company, AppSquadz Software which is popular for software development. This training will help you in learning special professional skills and provide proper exposure to the corporate world. Therefore, it is always beneficial for a student or aspirant to complete our JAVA Full Stack Course Training in Noida</p>
+
+        
+    </main>
+	
+	
+
+    <a href="https://wa.me/7704826442" class="enquire-button">Enquire Now</a>
+
+    <div class="footer-buttons">
+        <a href="https://wa.me/7704826442" class="button">Enquire Now</a>
+        <a href="https://wa.me/7704826442" class="button">Call us now</a>
+        <span>📞 77-04-82-64-42</span>
+    </div>
+</body>
+</html>

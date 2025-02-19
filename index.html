@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSquadz</title>
+    <link rel="stylesheet" href="style1.css">
+	<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    
+
+
+
+ <nav>
+        <div class="container nav-content">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                <span>CodeSquadz</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Courses</a>
+                    <div class="dropdown-content">
+                        <a href="javafullstack.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m18.7 8-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+                           Java Full Stack 
+                        </a>
+                        <a href="python.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6V2H8"/><path d="M12 22v-4l-4-4-4 4v4Z"/><path d="M20 22v-4l-4-4-4 4v4Z"/><path d="M20 10V6l-4-4-4 4v4Z"/><path d="M4 14v4"/><path d="M12 14v4"/><path d="M12 6v4"/></svg>
+                            Python Full Stack
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            Cloud Computing
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            AWS
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            UI/UX Design
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">Placement</a>
+                <a href="#" class="nav-link">Blog</a>
+               <button class="btn btn-primary" onclick="window.location.href='login.html'">Login / Signup</button>
+                <button class="btn btn-secondary" onclick="window.location.href='https://wa.me/7704826442'">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="tech-badges">
+                
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        Walk Towards Success<br>
+                        with the IT Courses at<br>
+                        <span class="highlight">codeSquadz</span>
+                    </h1>
+
+                    <div class="features">
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><a    href="AddStudent.html">Add a New Student</a></span>
+							
+							
+                        </div>
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><a    href="DeleteStudent.html">Delete a Existing Student</a></span>
+                        </div>
+						
+						
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><a  href="TotalStudent">Total Number of Students</a></span>
+                        </div>
+						
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><a    href="GetStudentAverageMarks.html">Get Student Report</a></span>
+                        </div>
+						
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><a    href="UpdateStudentServlet">Update Student</a></span>
+                        </div>
+						
+                        
+                    </div>
+
+                    <div class="cta-buttons">
+                        <button class="btn btn-secondary"onclick="window.location.href='https://wa.me/7704826442'">Enquire Now</button>
+                        <button class="btn btn-primary"onclick="window.location.href='https://wa.me/7704826442'">Call us now</button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://www.codesquadz.com/website_assets/images/manish-bhatia-sir.png" alt="Students learning">
+                    
+                    <div class="stat-card stat-card-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <div>
+                            <p class="stat-label">Active Students</p>
+                            <p class="stat-value">50000+</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card stat-card-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        <div>
+                            <p class="stat-label">Placement Rate</p>
+                            <p class="stat-value">100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+	
+	
+	
+	
+	<div id="manhattan" class="container">
+      <div class="brooklyn-header">
+        <h1 class="ITwala">Become a top IT professional with advanced tech skills</h1>
+      </div>
+      <div class="queens-content">
+        <div class="bronx-image">
+          <img src="images/manish.png" alt="Professional Photo" class="soho-photo">
+        </div>
+        <div class="tribeca-text">
+          <p>Manish Bhatia is one of the best industry experts providing Java training, with
+more than 22 years of experience at CodeSquadz. He has expertise in shaping
+the IT career of many students. He follows a unique approach to enable
+students to learn all the concepts and become job-ready.</p>
+          <div class="chelsea-signature">
+            <p>— Manish Bhatia, Co-Founder, CodeSquadz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	
+	
+	
+	
+	 <div id="kitchen">
+        <div class="pancake-container">
+            <h1 id="mainCourse">Advance IT Training By Industry Experts</h1>
+            <p id="appetizer">
+                CodeSquadz provides career-oriented IT training on live projects from industry experts to level up your IT career
+                through new-age tech skills.
+            </p>
+
+            <div id="buffet">
+                <div class="sushi-card">
+                    <i data-lucide="coffee"></i>
+                    <h3><a    href="javafullstack.html">Java</a></h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="code-2"></i>
+                    <h3><a    href="python.html">Python</a></h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="atom"></i>
+                    <h3>React JS</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="database"></i>
+                    <h3>Data Science</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="layers-3"></i>
+                    <h3>Mern Stack</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="palette"></i>
+                    <h3>Graphic & Video</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="boxes"></i>
+                    <h3>Mean Stack</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="component"></i>
+                    <h3>Angular JS</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="bug-play"></i>
+                    <h3>Full Stack QA</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="line-chart"></i>
+                    <h3>Digital Marketing</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="shield-check"></i>
+                    <h3>Cyber Security</h3>
+                </div>
+
+                <div class="sushi-card">
+                    <i data-lucide="cloud"></i>
+                    <h3>AWS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+	
+	
+	
+	
+	
+	
+</body>
+</html>

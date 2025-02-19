@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Codesquadz - Login</title>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+  
+  <style>
+    * {
+      font-family: "Poppins";
+    }
+    body {
+      user-select: none;
+      overflow-y: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #dde5f4;
+      height: 100vh;
+    }
+    .screen-1 {
+      background: #f1f7fe;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      border-radius: 30px;
+      box-shadow: 0 0 2em #e6e9f9;
+      gap: 1.5em;
+      width: 350px;
+    }
+    .screen-1 .logo {
+      margin-top: -3em;
+      align-self: center;
+    }
+    .input-box {
+      background: white;
+      box-shadow: 0 0 2em #e6e9f9;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      border-radius: 20px;
+      color: #4d4d4d;
+    }
+    .input-box input {
+      outline: none;
+      border: none;
+    }
+    .input-box input::placeholder {
+      color: black;
+      font-size: 0.9em;
+    }
+    .input-box ion-icon {
+      color: #4d4d4d;
+      margin-bottom: -0.2em;
+    }
+    .role-selection {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background: white;
+      box-shadow: 0 0 2em #e6e9f9;
+      border-radius: 20px;
+      color: #4d4d4d;
+    }
+    .role-selection label {
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .role-selection input {
+      margin-right: 5px;
+    }
+    .login {
+      padding: 1em;
+      background: #3e4684;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .signup-btn {
+      padding: 1em;
+      background: transparent;
+      border: 2px solid #3e4684;
+      color: #3e4684;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .signup-btn:hover {
+      background: rgba(62, 70, 132, 0.1);
+    }
+    .footer {
+      display: flex;
+      font-size: 0.8em;
+      color: #5e5e5e;
+      justify-content: space-between;
+    }
+    .footer span {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+
+
+ <form id="loginForm" method="post">
+
+<div class="screen-1">
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 640 480">
+    <circle cx="320" cy="240" r="40" fill="#3e4684"></circle>
+  </svg>
+
+  <div class="input-box">
+    <label for="email">Email Address</label>
+    <div class="sec-2">
+      <ion-icon name="mail-outline"></ion-icon>
+      <input type="text" name="name" placeholder="Username@gmail.com" required/>
+    </div>
+  </div>
+
+  <div class="input-box">
+    <label for="password">Password</label>
+    <div class="sec-2">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <input type="password" name="password" placeholder="············" required/>
+    </div>
+  </div>
+
+  <!-- Role Selection -->
+  
+
+  
+		  <label>Select Role</label>
+		  <div class="role-selection">
+			<label>
+			  <input type="radio"  name="role" value="user" required> Student
+			</label>
+			
+			
+			
+			
+			
+			<label>
+			  <input type="radio" name="role" value="admin" required> Admin
+			</label>
+		  </div>
+		  
+   
+
+		<button class="login" type="submit">Login</button>
+  
+ 
+  
+		<button class="signup-btn" type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+
+
+  <div class="footer">
+    <span>Forgot Password?</span>
+	
+	
+	
+  </div>
+  
+  
+  </form>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            let selectedRole = document.querySelector('input[name="role"]:checked');
+            if (selectedRole) {
+                let form = document.getElementById("loginForm");
+                if (selectedRole.value === "user") {
+                    form.action = "userloginauthentication";
+                } else if (selectedRole.value === "admin") {
+                    form.action = "Login";
+                }
+                form.submit(); // Submit form with the updated action
+            } else {
+                alert("Please select a role!");
+            }
+        });
+    </script>
+ 
+ 
+ 
+
+</body>
+</html>
+
+
+
+
+
+
+
